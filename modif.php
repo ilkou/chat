@@ -1,12 +1,12 @@
 <?php
 if ($_POST['submit'] !== "OK" || $_POST['login'] == "" || $_POST['oldpw'] == "" || $_POST['newpw'] == "" ) {
-    echo "ERROR\n";
+    echo "ERROR1\n";
 }
 else {
     $path = "../private/passwd";
     $data = unserialize(file_get_contents($path));
     if ($data == false) {
-        echo "ERROR\n";
+        echo "ERROR2\n";
         return (0);
     }
     else {
@@ -27,7 +27,7 @@ else {
             }
         }
     }
-    echo "ERROR\n";
+    echo "ERROR3\n";
     return (0);
 }
 ?>
