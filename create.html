@@ -1,8 +1,26 @@
-<html><body>
+<html>
+<head>
+    <style>
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        input {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div>
     <form action="create.php" method="post">
-        Identifiant: <input type="login" name="login" />
+        <input type="login" name="login" placeholder="Login" />
         <br />
-        Mot de passe: <input type="password" name="passwd" />
-        <input type="submit" name="submit" value="OK" />
+        <input type="password" name="passwd" placeholder="Password"/>
+        <br />
+        <input type='submit' data-disable-with='Signing in...' name='commit' value='Sign in'>
     </form>
-</body></html>
+    </div>
+</body>
+</html>
