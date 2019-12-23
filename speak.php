@@ -20,10 +20,11 @@ if ($_SESSION['loggued_on_user'] !== "") {
     }
 ?>
 <html>
-<head><script langage="javascript">top.frames['chat'].location = 'chat.php';</script></head>
+<head><script langage="javascript">top.frames['chat'].location = 'chat.php';
+</script></head>
 <body>
 <form method="post" action="speak.php">
-Message: <input type="text" name="msg" />
+Message: <input id="type" type="text" name="msg" />
 <input type="submit" name="submit" value="OK" />
 </form>
 </body></html>

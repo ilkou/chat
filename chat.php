@@ -17,7 +17,7 @@ if ($_SESSION['loggued_on_user'] != "") {
 ?>
 <html>
 <head><script langage="javascript">window.setInterval(function(){
-  location.reload();
+	location.reload();
   }, 3000);</script></head>
 <body>
 [<?= $time?>] <b><?= $value['login']?></b>: <?= $value['msg']?><br />
